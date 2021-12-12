@@ -14,7 +14,7 @@
         
       email: <input type="email" id="email" /><br>
         password: <input type="password" id="password" /><br>
-        <button id="signUp">Sign Up</button>
+        <button onclick="si()" id="signUp">Sign Up</button>
    
     
 <script type="module">
@@ -44,8 +44,7 @@
   const analytics = getAnalytics(app);
     const auth = getAuth(app);
     
-    
-    document.getElementById("signUp").addEventListener("click", function() {
+    function si() {
     
     console.log("hi");
     
