@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="styles/style.css"/>
-        <title>login</title>
-    </head>
-    <body>
-        <h1>
-            Login!!!
-        </h1>
-        <br>
-        
-      email: <input type="email" id="email" /><br>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+   email: <input type="email" id="email" /><br>
         password: <input type="password" id="password" /><br>
-        <button onclick="si()" id="signUp">Sign Up</button>
-   
-    
+     
+<button id="myBtn">login</button>
+
+<p id="demo"></p>
+
+
+
+
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
- import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-
-    // TODO: Add SDKs for Firebase products that you want to use
+   import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
@@ -44,9 +42,13 @@
   const analytics = getAnalytics(app);
     const auth = getAuth(app);
     
-    function si() {
-    
-    console.log("hi");
+
+</script>
+<script>
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+      console.log("hi");
     
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value
@@ -65,8 +67,8 @@
     alert("unauccesfull");
   });
     
-    
-    });
-        </script>
-    </body>
+
+}
+</script>
+</body>
 </html>
