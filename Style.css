@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+    height: 100vh;
+}
+.container {
+    width: 900px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    border-radius: 20px;
+}
+.img-slider{
+    width: 400px;
+    height: 500px;
+    border-right: 2px solid #D6FAE7;
+    border-radius: 20px;
+    /* border: 1px solid #000; */
+    background-color: #D6FAE7;
+}
+.img-slider h2{
+    position: relative;
+    top: 60px;
+    /* left: 50px; */
+    text-align: center;    
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+}
+.img-slider p {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(122, 122, 122);
+}
+.container .img-slider img {
+    width: 100%;
+    margin-top: 120px;
+}
+.content{
+    position: absolute;
+    top: 10px;
+    right:110px;
+    /* text-align: center; */
